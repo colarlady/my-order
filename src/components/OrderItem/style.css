@@ -1,3 +1,13 @@
 .OrderItem{
-    
+    padding: 10px;
 }
+.OrderItem_picContainer{
+    display: block;
+    width: 90px;
+    height: 90xp;
+    border:1px soild #ccc;
+}
+
+
+
+

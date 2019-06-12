@@ -3,7 +3,7 @@ import OrderItem from '../OrderItem';
 
 
 const data = {
-    picture:"123",
+    picture:'../../assets/images/test.jpg',
     product:"百香果(冷饮)1扎",
     shop:"院落创意菜",
     price:'19.9',
