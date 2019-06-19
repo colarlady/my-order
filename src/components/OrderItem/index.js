@@ -4,16 +4,16 @@ import './style.css'
 class OrderItem extends Component {
     render() {
         return (
-            <div className="OrderItem">
-                <div className="OrderItem_picContainer">
-                    <img className="OrderItem_pic" src='' alt="商品图片" />
+            <div className="orderItem">
+                <div className="orderItem_picContainer">
+                    <img className="orderItem_pic" src='../../assets/images/test.jpg' alt='商品图片'/>
                 </div>
-                <div className="OrderItem_content">
-                    <div className="OrderItem_product">商品名称</div>
-                    <div className="OrderItem_shop">商品描述</div>
-                    <div className="OrderItem_detail">
-                        <div className="OrderItem_price">价格</div>
-                        <button className="OrderItem-btn">评价</button>
+                <div className="orderItem_content">
+                    <div className="orderItem_product">商品名称</div>
+                    <div className="orderItem_shop">商品描述</div>
+                    <div className="orderItem_detail">
+                        <div className="orderItem_price">价格</div>
+                        <button className="orderItem_btn">评价</button>
                     </div>
                 </div>
             </div>
