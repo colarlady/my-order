@@ -1,20 +1,46 @@
 import React, { Component } from 'react';
 import OrderItem from '../OrderItem';
+import Header from '../Header';
 
 
-const data = {
-    picture:'../../assets/images/test.jpg',
-    product:"百香果(冷饮)1扎",
-    shop:"院落创意菜",
-    price:'19.9',
-    isComment:true
-}
 
 class index extends Component {
+
+    constructor(props){
+        super(props);
+        this.state ={
+            data:[],
+            
+
+        }
+    }
+    
+
+    componentDidMount(){
+        fetch('/mock/orders.json').then(res=>{
+            if(res.ok){
+                res.json().then(data=>{
+                    this.setState({
+                        data
+                    })
+                })
+            }
+        })      
+    }
+
+
     render() {
+        const {data} = this.state;
+  
         return (
             <div>
-                <OrderItem data={data} />
+                <Header/>
+                {
+                    data.map(item=>{
+                        return ( <OrderItem key={item.id}  data={item} />);
+                    })
+                }
+               
             </div>
         );
     }
