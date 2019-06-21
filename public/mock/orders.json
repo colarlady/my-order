@@ -4,7 +4,7 @@
         "product":"百香果(冷饮)1扎",
         "shop":"院落创意菜",
         "price":19.9,
-        "ifCommented":true
+        "ifCommented":false
     },
     {
         "id":2,
@@ -21,7 +21,7 @@
         "product":"百香果(冷饮)1扎",
         "shop":"院落创意菜",
         "price":19.9,
-        "ifCommented":true
+        "ifCommented":false
     },
     {
 
@@ -30,5 +30,5 @@
         "product":"百香果(冷饮)1扎",
         "shop":"院落创意菜",
         "price":19.9,
-        "ifCommented":true
+        "ifCommented":false
     }]

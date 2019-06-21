@@ -72,6 +72,7 @@
 }
 .orderItem__btn--gray {
 	background-color: #999;
+	margin-right: 15px;
 }
 .orderItem__btn--red {
 	background-color: #e9203d;
@@ -99,7 +100,7 @@
 	font-size: 20px;
 }
 
-.orderItem__star--light {
+.orderItem__star--red {
 	color: rgb(233, 32, 61);
 	font-size: 20px;
 }

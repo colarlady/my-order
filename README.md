@@ -12,7 +12,10 @@
 + Mock
 + Fetch 
 + React 生命周期函数
-    + componentDidMount        
+    + componentDidMount 
+    + 为元素添加多个类名
+    + 如何将表单元素变成受控组件
+    + react中事件处理函数       
 + VScode使用
     + 快速寻找某一文件 ctrl+p
     + 显示插件的命令  ctrl+shift+p

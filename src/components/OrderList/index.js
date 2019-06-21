@@ -10,12 +10,9 @@ class index extends Component {
         super(props);
         this.state ={
             data:[],
-            
-
         }
     }
     
-
     componentDidMount(){
         fetch('/mock/orders.json').then(res=>{
             if(res.ok){
@@ -28,16 +25,36 @@ class index extends Component {
         })      
     }
 
+    // 提交评论
+    handleCommentSubmit(id,comments,stars){
+        console.log(id,comments,stars);
+        const {data} = this.state;
+        const newData = data.map(item=>{
+            if(item.id===id){
+                return {
+                    ...item,
+                    id,
+                    comments,
+                    stars,
+                    ifCommented:true
+                }
+            }else{
+                return item;
+            }
+        });
 
+        this.setState({
+            data:newData
+        })
+    }
     render() {
         const {data} = this.state;
-  
         return (
             <div>
                 <Header/>
                 {
                     data.map(item=>{
-                        return ( <OrderItem key={item.id}  data={item} />);
+                        return ( <OrderItem key={item.id}  data={item} onSubmit={(id,comments,stars)=>this.handleCommentSubmit(id,comments,stars)} />);
                     })
                 }
                
