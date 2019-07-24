@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex-shrink</title>
+    <style>
+        .flexContainer {
+            width: 600px;
+            height: 400px;
+            background-color: rgb(92, 28, 28);
+            display: flex;
+            flex-wrap:nowrap;
+        }
+
+        .flexItem {
+            width: 300px;
+            height: 100px;
+            font: 50px/100px 'Microsoft yahei';
+            text-align: center;
+            /*
+                当弹性元素的总宽度是大于弹性容器的总宽度时
+                flex-shrink:设置元素的缩小比例
+                不设置默认是1
+            */ 
+        }
+
+        .flexItem:nth-of-type(1) {
+            width: 300px;
+            background-color: yellow;
+            flex-shrink: 1;
+        }
+
+        .flexItem:nth-of-type(2) {
+            width: 400px;
+            background-color: green;
+            flex-shrink: 2;
+        }
+
+        .flexItem:nth-of-type(3) {
+            width: 600px;
+            background-color: pink;
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexContainer">
+        <div class="flexItem">1</div>
+        <div class="flexItem">2</div>
+        <div class="flexItem">3</div>
+    </div>
+</body>
+
+</html>
